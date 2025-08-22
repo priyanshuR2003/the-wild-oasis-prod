@@ -17,7 +17,6 @@ import { useCheckin } from "./useCheckin";
 import { useSettings } from "../settings/useSettings";
 
 const Box = styled.div`
-  /* Box */
   background-color: var(--color-grey-0);
   border: 1px solid var(--color-grey-100);
   border-radius: var(--border-radius-md);
@@ -101,10 +100,10 @@ function CheckinBooking() {
           {!addBreakfast
             ? formatCurrency(totalPrice)
             : `${formatCurrency(
-                totalPrice + optionalBreakfastPrice
-              )} (${formatCurrency(totalPrice)} + ${formatCurrency(
-                optionalBreakfastPrice
-              )})`}
+              totalPrice + optionalBreakfastPrice
+            )} (${formatCurrency(totalPrice)} + ${formatCurrency(
+              optionalBreakfastPrice
+            )})`}
         </Checkbox>
       </Box>
 
